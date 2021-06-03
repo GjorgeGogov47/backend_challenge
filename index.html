@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Embed Social Back-end Challenge</title>
+    </head>
+    <body>
+        <header>
+            <h1>Filter reviews</h1>
+        </header>
+
+        <h3>Order by rating:</h3>
+        <select id='order_rating' style='width:200px'>
+            <option>Highest First</option>
+            <option>Lowest First</option>
+        </select>
+        <h3>Minimum rating</h3>
+        <select id='min_rating' style='width:200px'>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <h3>Order by date:</h3>
+        <select id='by_date' style='width:200px'>
+            <option>Newest First</option>
+            <option>Oldest First</option>
+        </select>
+        <h3>Prioritize by text:</h3>
+        <select id='priority_text' style='width:200px'>
+            <option>Yes</option>
+            <option>No</option>
+        </select><br/><br/>
+        <button onclick='testing()'>Filter</button>
+        <ol id='myList'></ol>
+
+        <script type="text/javascript" src="main.js"></script>  
+    </body>
+</html>
