@@ -93,6 +93,13 @@ function prioritet( a, b ) {
 
 function prikaz(obj){
   let lista = document.getElementById('myList');
+
+  //Cleaning
+  while( lista.firstChild ){
+    lista.removeChild( lista.firstChild );
+  }
+
+  //Displaying
   for(let i =0;i<obj.length;i++){
     let node = document.createElement("LI");
     let textNode = document.createTextNode(JSON.stringify(obj[i]));
