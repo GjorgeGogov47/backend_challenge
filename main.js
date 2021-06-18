@@ -43,7 +43,7 @@ function filtriranje(obj, order_rating, min_rating, by_date, priority_text){
   return izlez;
 }
 
-//Copypasta
+//Copypasta, needs editing
 function compare_rating( a, b ) {
   if ( a.rating > b.rating ){
     return -1;
